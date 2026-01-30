@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tooglr Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-grid">
+        <header style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 class="brand">Tooglr</h1>
+            <button id="logoutBtn" style="width: auto; padding: 5px 15px;">Logout</button>
+        </header>
+
+        <div class="graph-placeholder">
+            <h3 style="color: #2F4F4F; position: absolute; bottom: -30px;">JANUARY</h3>
+            </div>
+
+        <table class="habit-table">
+            <thead>
+                <tr class="header-pink">
+                    <th>Habits</th>
+                    <th colspan="4">Week 1</th>
+                    <th colspan="5">Week 2</th>
+                </tr>
+                <tr>
+                    <th>Days</th>
+                    <th>Th 1</th><th>Fr 2</th><th>Sa 3</th><th>Su 4</th>
+                    <th>Mo 5</th><th>Tu 6</th><th>We 7</th><th>Th 8</th><th>Fr 9</th>
+                </tr>
+            </thead>
+            <tbody id="habitRows">
+                <tr>
+                    <td style="text-align: left;">10k steps</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                </tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
