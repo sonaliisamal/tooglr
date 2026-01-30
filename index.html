@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooglr | Loading...</title>
+    <script>
+        // Check for session in localStorage
+        window.onload = () => {
+            const user = localStorage.getItem('tooglr_session');
+            window.location.href = user ? 'dashboard.html' : 'login.html';
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
