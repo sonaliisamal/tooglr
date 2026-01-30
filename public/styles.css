@@ -1,0 +1,101 @@
+/* --- PINK THEME VARIABLES --- */
+:root {
+    --primary: #ff66b2;       /* Hot Pink */
+    --primary-light: #ffb6c1; /* Light Pink headers */
+    --bg: #fff;
+    --text: #333;
+    --border: #333;           /* Darker borders like the image */
+    --grid-line: #ccc;
+}
+
+body { 
+    font-family: 'Courier New', Courier, monospace; /* Monospace for data */
+    margin: 0; 
+    background: var(--bg); 
+    color: var(--text); 
+}
+
+/* --- LOGO & FONTS --- */
+.logo-text {
+    font-family: 'Georgia', serif; /* Serif font like image */
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+/* --- LAYOUT --- */
+#auth-container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+.auth-box { border: 2px solid var(--primary); padding: 2rem; border-radius: 10px; text-align: center; }
+.auth-box button { background: var(--primary); color: white; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; }
+
+header { padding: 10px 30px; border-bottom: 2px solid var(--primary); display: flex; justify-content: space-between; align-items: center; }
+.main-layout { display: flex; height: calc(100vh - 80px); }
+
+/* Sidebar */
+.sidebar { width: 220px; border-right: 1px solid var(--grid-line); padding: 20px; background: #fff0f5; }
+.sidebar h3 { font-family: 'Georgia', serif; color: var(--primary); border-bottom: 2px solid var(--primary); }
+#sheet-list li { padding: 8px; cursor: pointer; font-weight: bold; }
+#sheet-list li.active { color: var(--primary); text-decoration: underline; }
+
+/* Main Content Area */
+.content { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; }
+#sheet-view { width: 100%; max-width: 1000px; }
+
+/* --- GRAPHS & HEADERS --- */
+.top-graph-container { width: 100%; height: 150px; margin-bottom: 20px; border-bottom: 2px solid #ddd; }
+.month-header { display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 20px; }
+.month-header h2 { font-family: 'Georgia', serif; font-size: 2rem; color: #004d40; /* Dark Green like image text */ text-transform: uppercase; margin: 0; }
+.month-header button { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--primary); }
+
+/* --- TABLE STYLING (The Core Look) --- */
+.table-container { overflow-x: auto; border: 2px solid var(--border); }
+table { width: 100%; border-collapse: collapse; min-width: 800px; }
+
+/* Headers */
+th { 
+    background: var(--primary-light); 
+    border: 1px solid var(--border); 
+    padding: 10px; 
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+/* First column (Habit Names) */
+th:first-child, td:first-child { 
+    background: var(--primary-light); 
+    position: sticky; 
+    left: 0; 
+    z-index: 10; 
+    min-width: 150px; 
+    text-align: left; 
+    padding-left: 15px;
+    border-right: 2px solid var(--border);
+}
+
+/* Cells */
+td { border: 1px solid var(--grid-line); text-align: center; padding: 0; height: 35px; min-width: 35px; }
+
+/* Checkboxes */
+input[type="checkbox"] { 
+    accent-color: var(--primary); 
+    width: 20px; height: 20px; cursor: pointer; 
+}
+
+/* Footer Stats Rows */
+.stat-row td { font-weight: bold; background: white; border-top: 2px solid var(--primary); }
+.stat-label { text-align: right; padding-right: 10px; background: white !important; font-family: 'Georgia', serif; }
+
+/* Visual Bar Chart in Table Footer */
+.bar-cell { vertical-align: bottom; height: 100px; padding: 0; background: white; border-bottom: none; }
+.bar-visual { 
+    background: var(--primary); 
+    width: 80%; 
+    margin: 0 auto; 
+    border-radius: 2px 2px 0 0; 
+    transition: height 0.3s ease;
+}
+
+/* Save Button Styling */
+.save-btn-cell { padding: 5px; }
+.save-btn { background: #004d40; color: white; border: none; padding: 4px 8px; font-size: 0.7rem; cursor: pointer; width: 100%; }
+.save-btn:disabled { background: #ccc; }

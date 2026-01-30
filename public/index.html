@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooglr - Pink Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="auth-container">
+        <h1 class="logo-text">Tooglr</h1>
+        <div class="auth-box">
+            <h2 id="auth-title">Login</h2>
+            <form id="auth-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" id="auth-btn">Login</button>
+            </form>
+            <p id="auth-toggle">Need an account? Sign Up</p>
+        </div>
+    </div>
+
+    <div id="app-container" style="display: none;">
+        <header>
+            <div class="logo-text">Tooglr</div>
+            <div class="user-info">
+                <span id="user-display"></span>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <aside class="sidebar">
+                <h3>Sheets</h3>
+                <ul id="sheet-list"></ul>
+                <div class="new-sheet-form">
+                    <input type="text" id="new-sheet-name" placeholder="New Sheet...">
+                    <button id="add-sheet-btn">+</button>
+                </div>
+            </aside>
+
+            <main class="content">
+                <div id="no-sheet-selected">Select a sheet to start tracking</div>
+                
+                <div id="sheet-view" style="display: none;">
+                    
+                    <div class="top-graph-container">
+                        <canvas id="lineChart" height="100"></canvas>
+                    </div>
+
+                    <div class="month-header">
+                        <button id="prev-month">◄</button>
+                        <h2 id="current-month-display">JANUARY</h2>
+                        <button id="next-month">►</button>
+                    </div>
+
+                    <div class="habit-manager">
+                        <input type="text" id="new-habit-name" placeholder="Type a new habit...">
+                        <button id="add-habit-btn">Add</button>
+                    </div>
+
+                    <div class="table-container">
+                        <table id="tracker-table">
+                            <thead id="table-header">
+                                </thead>
+                            <tbody id="table-body">
+                                </tbody>
+                            <tfoot id="table-footer">
+                                </tfoot>
+                        </table>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <script src="app.js"></script>
+</body>
+</html>
