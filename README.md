@@ -13,7 +13,7 @@
 
 | Dashboard View | Monthly Heatmap |
 |:---:|:---:|
-| <img src="https://via.placeholder.com/600x300/ffb6c1/333333?text=Add+Your+Screenshot+Here" width="100%"> | <img src="https://via.placeholder.com/600x300/ff66b2/ffffff?text=Add+Graph+Screenshot" width="100%"> |
+| <img src="C:\Users\SONALI\OneDrive\Pictures\Screenshots\Screenshot 2026-01-31 232259.png" width="100%"> | <img src="https://via.placeholder.com/600x300/ff66b2/ffffff?text=Add+Graph+Screenshot" width="100%"> |
 
 *(Tip: Drag and drop your actual screenshots into this README file on GitHub to replace these placeholders!)*
 
