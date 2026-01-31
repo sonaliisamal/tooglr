@@ -17,7 +17,7 @@
 | <img width="1884" height="900" alt="dashboard" src="https://github.com/user-attachments/assets/b76b7096-03ce-4146-9b4f-2598c583c484" /> | <img width="1337" height="226" alt="monthlyheap" src="https://github.com/user-attachments/assets/2301bf87-2795-4416-a586-60d29415a63e" />
 
 
-*(Tip: Drag and drop your actual screenshots into this README file on GitHub to replace these placeholders!)*
+
 
 ---
 
