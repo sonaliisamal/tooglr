@@ -13,7 +13,9 @@
 
 | Dashboard View | Monthly Heatmap |
 |:---:|:---:|
-| <img src="C:\Users\SONALI\OneDrive\Pictures\Screenshots\Screenshot 2026-01-31 232259.png" width="100%"> | <img src="https://via.placeholder.com/600x300/ff66b2/ffffff?text=Add+Graph+Screenshot" width="100%"> |
+
+| <img width="1884" height="900" alt="dashboard" src="https://github.com/user-attachments/assets/b76b7096-03ce-4146-9b4f-2598c583c484" /> | <img width="1337" height="226" alt="monthlyheap" src="https://github.com/user-attachments/assets/2301bf87-2795-4416-a586-60d29415a63e" />
+
 
 *(Tip: Drag and drop your actual screenshots into this README file on GitHub to replace these placeholders!)*
 
